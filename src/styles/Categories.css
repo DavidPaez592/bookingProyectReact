@@ -1,0 +1,105 @@
+.cb{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+@media screen and (max-width: 700px){
+    .cb{
+        flex-direction: column;
+    }
+}
+.showAll{
+    background-color: #FBC02D;
+    border-style: none;
+    border-radius: 5px;
+    width: 12.1%;
+    margin: 10px;
+    padding: 7px;
+}
+@media screen and (max-width: 700px){
+    .showAll{
+        background-color: #FBC02D;
+        border-style: none;
+        border-radius: 5px;
+        width: 55%;
+        margin: 10px;
+        padding: 7px;
+    }
+}
+
+.showAll:hover{
+    background-color: #fbc02d85;
+}
+
+.showAll > button{
+    border-width: 0;
+    background-color: transparent;
+}
+.categories-container{
+    width: 90vw;
+    display: grid;
+    gap: 1rem;
+    grid-column: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.category{
+    padding: 5px;
+    border-radius: 10px;
+    background-color:white;
+    border-color: #607D8B;
+    border-width: 2px;
+    height: 180px;
+    filter: drop-shadow(0px 3px 3px #DFE4EA);
+    box-sizing: border-box;
+    border: 1px solid #F3F1ED;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.category > img{
+    border-radius: 20px;
+
+}
+.img-category{
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+}
+.filter{
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .selector{
+      width: 100%;
+      font-size: 1rem;
+      font-weight: bold;
+  }
+.filter > h2{
+    min-width: 400px;
+}
+.cont{
+    margin: 0 auto;
+ width: 90vw;
+ padding-bottom: 100px;
+}
+.productsContainer{
+width: 100%;
+    display: grid;
+gap: 1rem;
+grid-column: 20rem;
+grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+     
+}
+ @media screen and (max-width: 550px){
+    .productContainer{
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+ }
+@media screen and (max-width: 670px){
+
+    .filter{flex-direction: column;
+text-align: center;}
+    .selector{margin-left: 0;}
+}

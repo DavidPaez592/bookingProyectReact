@@ -1,0 +1,202 @@
+*{
+  font-family: 'Poppins', sans-serif;
+
+}
+p{
+  padding: 0;
+  margin: 0%;
+  color: #263238;
+}
+
+body{
+  margin: 0%;
+  overflow-x: hidden;
+}
+
+#app {
+  /*display: flex;*/
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+.route{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100vw;
+  min-height: 100vh;}
+/* -----------------------------------|HEADER STYLES|------------------------------------- */
+header{
+  z-index: 1;
+  background-color: #FFFBE2;
+  width: 100%;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: top 2s;
+}
+.sessionButtonsContainer{
+  width: 35vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  padding-right: 6%;
+  
+}
+.menu{
+  margin-right: 46px;
+  display: flex;
+}
+@media screen and (max-width: 460px){
+  .menu{
+    margin-right: 10px;
+  }
+}
+.sessionButton{
+  margin: 3%;
+  height: fit-content;
+  font-size: 1vw;
+  text-align:center;
+  border-radius: 5px;
+  background-color: #FBC02D;
+  height: 38px;
+}
+
+.sessionButton > a{
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.sessionButton > a >h4{
+  margin: 3%; 
+}
+
+.botonCerrar {
+  border: none;
+  margin: 3%;
+    height: fit-content;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #fb7f2d;
+    height: 38px;
+    color: white;
+}
+
+.botonCerrar:hover {
+  background-color: #ffbc14;
+}
+
+
+
+
+.logo{
+  display: flex;
+  flex-direction: row;
+  align-items:end;
+  padding: 15px;
+  padding-left: 2%;
+  width: 20vw;
+  min-width: 200px;
+  font-size:13px;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo > img{
+  margin: 0%;
+  margin-right: 2%;
+  max-width: 23%;
+}
+
+/* -----------------------------------|FOOTER STYLES|------------------------------------- */
+footer{
+  background-color: #FFFBE2;
+  width: 100vw;
+  position:fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  max-height: 30px;
+  height: fit-content;
+}
+.footerLink{
+  margin-left: 2%;
+  height: 2rem;
+  width: 25vw;
+  font-size:0.9vw;
+  font-style: italic;
+  text-decoration: none;
+  cursor: pointer; 
+}
+.footerLink > .img{
+  height: 100%;
+  max-width: 30%;
+  min-width: 90px;
+}
+.socialNetworksContainer{
+  margin-right: 2%;
+  display: flex;
+  justify-content: end;
+  width: 24%;
+}
+.icon{
+  width: 1.3rem;
+}
+footer > p{
+  font-size: 2vw;
+}
+@media screen and (min-width: 480px){
+  footer > p{
+    font-size: 2vh;
+  }
+}
+a{
+  text-decoration: none;
+  color:black;
+}
+@media screen and (max-width: 480px){
+  .icon{
+    margin: 5px;
+    width: 0.8rem;
+  }
+  .socialNetworksContainer{
+    
+    display: flex;
+    justify-content: end;
+    width: 20%;
+  }
+}
+
+.categories{
+  padding: 0px 100px 0px 100px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+.tituloLogo{
+  font-family: 'Poppins';
+font-style: italic;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 480px){
+  .tituloLogo{
+    display: none;
+  }
+}
+
+#menuButton{
+  height: 40px;
+  width: 25px;
+}
+
+h2{
+  font-size: 36px;
+  padding: 10px;
+}
